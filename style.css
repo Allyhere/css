@@ -1,0 +1,23 @@
+.fluted-glass {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.fluted-glass__partial {
+  height: 100%;
+  width: 40px;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.01) 0%,
+    rgba(0, 0, 0, 0.2) 33%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+
+  background-blend-mode: overlay;
+  backdrop-filter: blur(16px);
+  mask-image: linear-gradient(to bottom, black 0% 50%, transparent 50% 100%);
+  pointer-events: none;
+}
